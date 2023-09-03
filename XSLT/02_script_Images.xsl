@@ -76,7 +76,7 @@
     <!--  Don't copy the lyrics (that will be done by Verovio and would be redundant)  -->
     <xsl:template match="mei:*/text()"/>
 
-    <!-- Insert HTML span elements with the class 'notationVerovio' where there is notatedMusic in TEI -->
+    <!-- Insert an image element to display the graphic -->
     <xsl:template match="tei:notatedMusic">
         <xsl:variable name="imgURL">
             <xsl:value-of select="./tei:graphic/data(@url)"/>

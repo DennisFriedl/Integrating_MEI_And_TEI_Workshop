@@ -76,7 +76,7 @@
     <!--  Don't copy the lyrics (that will be done by Verovio and would be redundant)  -->
     <xsl:template match="mei:*/text()"/>
 
-    <!-- Insert HTML span elements with the class 'notationVerovio' where there is notatedMusic in TEI -->
+    <!-- What should we do with the music notation? -->
     <xsl:template match="tei:notatedMusic">
         MUSIC NOTATION HERE
     </xsl:template>
