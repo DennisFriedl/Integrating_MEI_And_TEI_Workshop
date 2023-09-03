@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Electronic transcription of a letter from Beethoven to Breitkopf &amp;
+                    Härtel</title>
+                <respStmt>
+                    <resp>Encoder</resp>
+                    <persName>[Your name]</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Handwritten letter</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+
+    <text type="letter">
+        <body>
+            <div type="writingSession">
+                <pb/>
+                <p>
+                    <lb/> Nb: geben sie acht, daß bey 
+                    <lb/> meiner Korrektur des Konzerts 
+                    <lb/><del rend="overwritten">bey</del>in der 1ten Violinstim<supplied>m</supplied>e im 
+                    <lb/>1ten A<hi rend="superscript">llo</hi> Seite 5 Zeile 7 
+                    <lb/> 1=ter Takt
+                    
+                    <figure>
+                        <notatedMusic place="inline">
+                           
+                            <!--fallback: music is included as graphic-->
+                            <graphic
+                                url="https://brieftext.beethoven.de/henle/static/ngraf/n496_1.gif">
+                                <desc>First musical example in the Beethoven letter: one measure
+                                    describing where to put the piano</desc>
+                            </graphic>
+                            
+                            
+                            <section xmlns="http://www.music-encoding.org/ns/mei">
+                                <scoreDef>
+                                    <staffGrp>
+                                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="3f"/>
+                                    </staffGrp>
+                                </scoreDef>
+                                <measure n="1" right="invis" left="invis">
+                                    <staff n="1">
+                                        <layer n="1">
+                                            <space dur="2" dots="1"/>
+                                            <beam>
+                                                <note pname="a" oct="5" accid.ges="f" dur="8"
+                                                  stem.dir="up" dots="1"/>
+                                                <note pname="a" oct="5" accid.ges="f" dur="16"
+                                                  stem.dir="up"/>
+                                            </beam>
+                                        </layer>
+                                        <layer n="2">
+                                            <rest dur="4"/>
+                                            <beam>
+                                                <note pname="a" accid.ges="f" oct="4" dur="8"
+                                                  stem.dir="down" dots="1"/>
+                                                <note pname="a" accid.ges="f" oct="4" dur="16"
+                                                  stem.dir="down"/>
+                                            </beam>
+                                            <note pname="a" accid.ges="f" oct="4" dur="4"
+                                                stem.dir="down"/>
+                                            <rest dur="4"/>
+                                        </layer>
+                                    </staff>
+                                    <dir staff="1" layer="1" tstamp="3" place="above">ob.</dir>
+                                    <dynam staff="1" layer="2" tstamp="4" place="below">p:</dynam>
+                                </measure>
+                            </section>
+                        </notatedMusic>
+                    </figure> 
+                    
+                    das piano 
+                    <lb/> unter diese Noten 
+                    
+                    <figure>
+                        <notatedMusic place="inline">
+                            
+                           <!--fallback: music is included as graphic--> 
+                            <graphic
+                                url="https://brieftext.beethoven.de/henle/static/ngraf/n496_2.gif"/>
+                            <desc>Second musical example in the Beethoven letter: two noted and the
+                                piano that should be placed under the notes</desc>
+                            
+                            <section xmlns="http://www.music-encoding.org/ns/mei">
+                                <scoreDef>
+                                    <staffGrp>
+                                        <staffDef n="1" lines="0"/>
+                                    </staffGrp>
+                                </scoreDef>
+                                <measure right="invis" left="invis">
+                                    <staff>
+                                        <layer>
+                                            <beam>
+                                                <!--it is also possible to encode @pname, @accid.ges and @octave because we are aware of the actual pitch of the notes, but then there are rendering "issues". it depends on what you want to encode and what you want to display-->
+                                                <note xml:id="note1" dur="8" stem.dir="up" dots="1"/>
+                                                <note dur="16" stem.dir="up"/>
+                                            </beam>
+                                        </layer>
+                                    </staff>
+                                    <dynam staff="1" tstamp="1.5" place="below">p</dynam>
+                                </measure>
+                            </section>
+                        </notatedMusic>
+                    </figure> 
+                    
+                    nicht 
+                    <lb/> aber umgekehrt unter die 
+                    <lb/> Violin-Noten gesezt werde– 
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

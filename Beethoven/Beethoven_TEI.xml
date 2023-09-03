@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+  schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Electronic transcription of a letter from Beethoven to Breitkopf &amp; Härtel</title>
+        <respStmt>
+          <resp>Encoder</resp>
+          <persName>[Your name]</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p/>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Handwritten letter</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <text type="letter">
+    <body>
+      <div>
+        <pb/>
+        <p>
+          <lb/> Nb: geben sie acht, daß bey 
+          <lb/> meiner Korrektur des Konzerts 
+          <lb/><del rend="overwritten">bey</del>in der 1ten Violinstim<supplied>m</supplied>e im 
+          <lb/>1ten A<hi rend="superscript">llo</hi> Seite 5 Zeile 7 
+          <lb/>1=ter Takt 
+          
+          das piano 
+          <lb/> unter diese Noten 
+          
+          nicht 
+          <lb/> aber umgekehrt unter die 
+          <lb/> Violin-Noten gesezt werde – 
+        </p>
+      </div>
+    </body>
+  </text>
+
+</TEI>
