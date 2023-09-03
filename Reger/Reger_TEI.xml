@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Electronic transcription of Supplement to the Theory of Modulation</title>
+            <respStmt>
+               <resp>Encoder</resp>
+               <persName></persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Print</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <head>32) <hi rend="bold">d-minor</hi>.</head>
+            <p>Tonic C-major = the dominant of F-major; relative (g-minor) to the sub-dominant of
+               F-major; use this g-minor, which is at the same time the sub-dominant in d-minor.
+               (Cadence!)</p>
+            <p>[C<hi rend="superscript">I</hi> (= F<hi rend="superscript">V</hi>), F<hi
+               rend="superscript">II</hi> (= d<hi rend="superscript">IV</hi>), d<hi
+                  rend="superscript">V<hi rend="superscript">6</hi><hi rend="subscript"
+                     >4</hi></hi>, d<hi rend="superscript">V</hi><hi rend="subscript">&#9839;
+                        <!-- ♯, music sharp sign--></hi>, | d<hi rend="superscript">I</hi>]</p>
+            <p>
+               <figure/>
+               (phrygisch!) </p>
+         </div>
+         <div>
+            <head>33) <hi rend="bold">g-minor</hi>.</head>
+            <p>Tonic C-major, which is used, as it is also the chord of the Dorian<ref target="#fn01" type="noteAnchor">*)</ref>
+               sixth in g-minor; dominant (D-major) with 7th (2nd inversion) of g-minor.</p>
+            <p>[C<hi rend="superscript">I</hi> (= g<hi rend="superscript">IV<hi rend="subscript">3</hi></hi>&#9838;<!-- ♮, music natural sign -->), g<hi rend="superscript"><hi rend="underline"
+               n="2">V</hi><hi rend="superscript">7</hi><hi rend="subscript">&#9839;
+                  <!-- ♯, music sharp sign--></hi></hi>, g<hi rend="superscript">I</hi>]</p>
+         </div>
+         <div>
+            <figure/>
+         </div>
+         <div>
+            <lb/><head>34) <hi rend="bold">c-minor</hi>.</head>
+            <p>Tonic C-major; minor sub-dominant (f-minor) in C-major; use this f-minor, which is
+               at the same time the sub-dominant fo c-minor. (Cadence!)</p>
+            <p>[C<hi rend="superscript">I</hi>, C<hi rend="superscript">IV</hi><hi
+               rend="subscript">&#9837;<!-- ♭, music flat sign --></hi> (= c<hi rend="superscript">IV</hi>) c<hi
+                  rend="superscript">V<hi rend="superscript">6</hi><hi rend="subscript"
+                     >4</hi></hi>, c<hi rend="superscript">V</hi><hi rend="subscript">&#9838;<!-- ♮, music natural sign --></hi>, | c<hi rend="superscript">I</hi>]</p>
+         </div>
+         <div>
+            <head>35) <hi rend="bold">f-minor</hi>.</head>
+            <p>Tonic C-major is used, as it is also the dominant in f-minor; then Cadence.</p>
+            <p>[C<hi rend="superscript">I</hi> (= f<hi rend="superscript">V</hi><hi
+               rend="subscript">&#9838;<!-- ♮, music natural sign --></hi>), f<hi rend="superscript">I</hi>, f<hi
+                  rend="superscript"><hi rend="underline" n="1">II</hi></hi>, f<hi
+                     rend="superscript">V</hi><hi rend="subscript">&#9838;<!-- ♮, music natural sign --></hi> | f<hi
+                        rend="superscript">I</hi>]</p>
+         </div>
+         <div type="footer">
+            <note xml:id="fn01" type="footnote">*) The Dorian sixth is the major sixth in minor, which must always be led upwards (to the leading tone); for instance, f&#9839;<!-- ♯, music sharp sign--> in a-minor; this f&#9839;<!-- ♯, music sharp sign--> can be taken as the "Third" in D-major and also as the "Fifth" in the b-minor triad! (Hence D-major and b-minor: Chords of the Dorian sixth in a-minor!</note>
+         </div>
+      </body>
+   </text>
+</TEI>

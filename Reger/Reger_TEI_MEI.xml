@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Electronic transcription of Supplement to the Theory of Modulation</title>
+            <respStmt>
+               <resp>Encoder</resp>
+               <persName></persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Print</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <head>32) <hi rend="bold">d-minor</hi>.</head>
+            <p>Tonic C-major = the dominant of F-major; relative (g-minor) to the sub-dominant of
+               F-major; use this g-minor, which is at the same time the sub-dominant in d-minor.
+               (Cadence!)</p>
+            <p>[C<hi rend="superscript">I</hi> (= F<hi rend="superscript">V</hi>), F<hi
+               rend="superscript">II</hi> (= d<hi rend="superscript">IV</hi>), d<hi
+                  rend="superscript">V<hi rend="superscript">6</hi><hi rend="subscript"
+                     >4</hi></hi>, d<hi rend="superscript">V<hi rend="subscript">&#9839;
+                        <!-- ♯, music sharp sign--></hi></hi>, | d<hi rend="superscript">I</hi>]</p>
+            <p>
+               <figure>
+                  <notatedMusic place="inline">
+                     <section xmlns="http://www.music-encoding.org/ns/mei">
+                        <scoreDef>
+                           <staffGrp>
+                              <staffDef xml:id="xaec66658-22b9-48b5-b7e0-d7eb6aadcc64" clef.shape="G" clef.line="2" clef.visible="false" lines="5" key.sig="0" meter.unit="4" meter.count="3" n="1" meter.form="invis">
+                              </staffDef>
+                           </staffGrp>
+                        </scoreDef>
+                        <section xml:id="x08f2be65-33dc-4186-9795-3a348b0a5ea0" label="d-minor">
+                           <measure n="1" right="invis">
+                              <staff n="1">
+                                 <layer>
+                                    <note xml:id="x6154a582-07c5-42cf-b5be-501f998db6dc" pname="c" oct="5" dur="4" stem.dir="up"/>
+                                    <note xml:id="x0cc512d5-8e57-4d72-b2f0-42edd06cf0b3" pname="b" oct="4" dur="4" stem.dir="up">
+                                       <accid xml:id="x5b9868bc-cec6-4a5c-87c9-0eb130186529" accid="f"/>
+                                    </note>
+                                    <note xml:id="x4c9e710a-487c-4f57-9884-86c3d8166811" pname="a" oct="4" dur="4" stem.dir="up"/>
+                                 </layer>
+                              </staff>
+                              <harm xml:id="x6e9c5c5d-4bde-41ab-9c88-76056ada08bb" tstamp="1" place="below">C</harm>
+                              <harm xml:id="x6a0a4084-21a1-45d0-9918-d9e7f0c1b2de" tstamp="2" place="below">g</harm>
+                              <harm xml:id="x410ef320-a3b5-463b-b4a6-0afa873cf86a" tstamp="3" place="below">A-major</harm>
+                           </measure>
+                        </section>
+                     </section>
+                  </notatedMusic>
+               </figure>
+               (phrygisch!) </p>
+         </div>
+         <div>
+            <head>33) <hi rend="bold">g-minor</hi>.</head>
+            <p>Tonic C-major, which is used, as it is also the chord of the Dorian<ref target="#fn01" type="noteAnchor">*)</ref>
+               sixth in g-minor; dominant (D-major) with 7th (2nd inversion) of g-minor.</p>
+            <p>[C<hi rend="superscript">I</hi> (= g<hi rend="superscript">IV<hi rend="subscript">3</hi></hi>&#9838;<!-- ♮, music natural sign -->), g<hi rend="superscript"><hi rend="underline"
+               n="2">V</hi><hi rend="superscript">7</hi><hi rend="subscript">&#9839;
+                  <!-- ♯, music sharp sign--></hi></hi>, g<hi rend="superscript">I</hi>]</p>
+         </div>
+            <div>
+            <figure>
+               <notatedMusic place="inline">
+                  <mdiv xmlns="http://www.music-encoding.org/ns/mei">
+                     <score>
+                        <scoreDef>
+                           <staffGrp symbol="brace">
+                              <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" meter.form="invis"/>
+                              <staffDef n="2" lines="5" clef.shape="F" clef.line="4" meter.count="4" meter.unit="4" meter.form="invis"/>
+                           </staffGrp>
+                        </scoreDef>
+                        <section xml:id="x513c6f21-8841-4455-ada8-93caa666b8e4" label="c-minor">
+                           <measure n="1">
+                              <staff n="1">
+                                 <layer n="1">
+                                    <note xml:id="x64e675d3-bb78-4e40-9481-635181411430" pname="e" oct="4" dur="4"/>
+                                    <note xml:id="x56c32e5b-f5e9-4c0f-a44d-ffc02cda9169" pname="f" oct="4" dur="4"/>
+                                    <note xml:id="x3c9ef370-5412-4776-9c3a-e543c0e9683d" pname="e" oct="4" dur="4" accid="f"/>
+                                    <note xml:id="x5ff3550e-bf3b-4326-8528-30fb1ffe410f" pname="d" oct="4" dur="4"/>
+                                 </layer>
+                                 <layer n="2">
+                                    <note xml:id="xbbb51809-851e-4b7d-922b-e6e03bd46991" pname="c" dur="2" dots="1" oct="4"/>
+                                    <note xml:id="x3a7384ff-5fb5-48a7-9308-62b834b25640" pname="b" oct="3" dur="4"/>
+                                 </layer>
+                              </staff>
+                              <staff n="2">
+                                 <layer n="1">
+                                    <note xml:id="x1a29a26c-bcd3-41ea-a09c-ffcc8d6b069b" pname="g" oct="3" dur="4"/>
+                                    <note xml:id="xaeac372c-30c8-424d-ba9e-4a955f84e6eb" pname="a" oct="3" dur="4" accid="f"/>
+                                    <note xml:id="x28d8c5c5-e32d-4d0b-b84e-2abc4d1f4c54" pname="g" oct="3" dur="2"/>
+                                 </layer>
+                                 <layer n="2">
+                                    <note xml:id="xfe880cf7-792f-464e-a215-f50ac3004441" pname="c" oct="3" dur="4"/>
+                                    <note xml:id="xc8939d6f-f70a-4c58-af2b-e534a1c4f4f2" pname="f" oct="2" dur="4"/>
+                                    <note xml:id="xc424c7c5-c038-4b4c-8f33-73cf4ec5715f" pname="g" oct="2" dur="2"/>
+                                 </layer>
+                              </staff>
+                              <tie startid="#x28d8c5c5-e32d-4d0b-b84e-2abc4d1f4c54" endid="#xda84e8e6-4eca-4452-82b2-5a7c4a239d30" curvedir="above"/>
+                              <dir staff="1" place="above" tstamp="1"><rend fontstyle="normal">34) c-minor,</rend></dir>
+                           </measure>
+                           <measure n="2" right="dbl">
+                              <staff n="1">
+                                 <layer n="1">
+                                    <note xml:id="xc959a63b-978a-40cf-bb37-cd6df4032aa2" pname="e" oct="4" dur="1" accid="f"/>
+                                 </layer>
+                                 <layer n="2">
+                                    <note xml:id="x5bf7a5cd-eaf2-40a7-b05a-b33432567b6a" pname="c" oct="4" dur="1"/>
+                                 </layer>
+                              </staff>
+                              <staff n="2">
+                                 <layer n="1">
+                                    <note xml:id="xda84e8e6-4eca-4452-82b2-5a7c4a239d30" pname="g" oct="3" dur="1"/>
+                                 </layer>
+                                 <layer n="2">
+                                    <note xml:id="x3507ab3c-2573-4b3e-a4ef-a0e1d0200443" pname="c" oct="3" dur="1"/>
+                                 </layer>
+                              </staff>
+                           </measure>
+                        </section>
+                        <section xml:id="xbfb4c19a-cba7-4385-ab6d-87697329226a" label="f-minor">
+                           <measure n="1">
+                              <staff n="1">
+                                 <layer n="1">
+                                    <note xml:id="x42025db9-9b0c-4c09-93c4-f10062550a54" pname="g" oct="4" dur="4"/>
+                                    <note xml:id="x90f46e13-000e-4753-830e-e3619aa1fc13" pname="a" oct="4" dur="4" accid="f"/>
+                                    <note xml:id="xfd1655b7-a669-41ae-a069-d080311dd3aa" pname="b" oct="4" dur="4" accid="f"/>
+                                    <note xml:id="x16cdaa25-75e3-44ce-abae-9f982608991f" pname="g" oct="4" dur="4"/>
+                                 </layer>
+                                 <layer n="2">
+                                    <note xml:id="x00c0e1bc-8d5a-4794-9c46-cd9bc496c078" pname="e" oct="4" dur="4"/>
+                                    <note xml:id="x422db9b1-d598-40ed-8ac5-34c351d2d40d" pname="f" oct="4" dur="4"/>
+                                    <note xml:id="xce1cb77e-0584-4fc5-b63f-bae59a7e524e" pname="g" oct="4" dur="4"/>
+                                    <note xml:id="x3780b485-b1ae-4e6f-a8e6-b4d283cc6ac3" pname="e" oct="4" dur="4"/>
+                                 </layer>
+                              </staff>
+                              <staff n="2">
+                                 <layer n="1">
+                                    <note xml:id="x30f84bbd-bf84-4346-9acf-49c9b8c76cfa" pname="c" oct="4" dur="2"/>
+                                    <note xml:id="x1948cfaa-00ec-4b32-af7b-322423a32d0b" pname="d" oct="4" dur="4" accid="f"/>
+                                    <note xml:id="x8c34178d-fa08-4fd0-8e34-e2240d415e08" pname="c" oct="4" dur="4"/>
+                                 </layer>
+                                 <layer n="2">
+                                    <note xml:id="x20cca864-a02a-46a6-87f0-b244b29e1aa0" pname="c" oct="3" dur="4"/>
+                                    <note xml:id="x6f20d2d0-9039-4db6-b515-2921c17b4807" pname="f" oct="3" dur="4"/>
+                                    <note xml:id="xe5f77e23-6e91-473f-9eeb-26cdf7edbd15" pname="b" oct="2" dur="4" accid="f"/>
+                                    <note xml:id="xfcde9ad0-3279-427f-9651-1ae939539726" pname="c" oct="3" dur="4"/>
+                                 </layer>
+                              </staff>
+                              <tie startid="#x8c34178d-fa08-4fd0-8e34-e2240d415e08" endid="#xb5cc3f22-1d09-484c-9b08-9b0257d8c019" curvedir="above"/>
+                              <dir staff="1" place="above" tstamp="1"><rend fontstyle="normal">35) f-minor,</rend></dir>
+                           </measure>
+                           <measure n="2" right="dbl">
+                              <staff n="1">
+                                 <layer n="1">
+                                    <note xml:id="x682fee0f-5d7f-4272-9c3b-a467e6fc8ca3" pname="a" dur="1" oct="4" accid="f"/>
+                                 </layer>
+                                 <layer n="2">
+                                    <note xml:id="x0612d889-1558-46ba-88d8-88f6185a666e" pname="f" dur="1" oct="4"/>
+                                 </layer>
+                              </staff>
+                              <staff n="2">
+                                 <layer n="1">
+                                    <note xml:id="xb5cc3f22-1d09-484c-9b08-9b0257d8c019" pname="c" dur="1" oct="4"/>
+                                 </layer>
+                                 <layer n="2">
+                                    <note xml:id="x6829d8e9-566d-4770-acba-a3b5146b775f" pname="f" dur="1" oct="3"/>
+                                 </layer>
+                              </staff>
+                           </measure>
+                        </section>
+                     </score>
+                  </mdiv>
+               </notatedMusic>
+            </figure>
+         </div>
+         <div>
+            <lb/><head>34) <hi rend="bold">c-minor</hi>.</head>
+            <p>Tonic C-major; minor sub-dominant (f-minor) in C-major; use this f-minor, which is
+               at the same time the sub-dominant fo c-minor. (Cadence!)</p>
+            <p>[C<hi rend="superscript">I</hi>, C<hi rend="superscript">IV</hi><hi
+               rend="subscript">&#9837;<!-- ♭, music flat sign --></hi> (= c<hi rend="superscript">IV</hi>), c<hi
+                  rend="superscript">V<hi rend="superscript">6</hi><hi rend="subscript"
+                     >4</hi></hi>, c<hi rend="superscript">V<hi rend="subscript">&#9838;<!-- ♮, music natural sign --></hi></hi>, | c<hi rend="superscript">I</hi>]</p>
+         </div>
+         <div type="footer">
+            <note xml:id="fn01" type="footnote">*) The Dorian sixth is the major sixth in minor, which must always be led upwards (to the leading tone); for instance, f&#9839;<!-- ♯, music sharp sign--> in a-minor; this f&#9839;<!-- ♯, music sharp sign--> can be taken as the "Third" in D-major and also as the "Fifth" in the b-minor triad! (Hence D-major and b-minor: Chords of the Dorian sixth in a-minor!</note>
+         </div>
+      </body>
+   </text>
+</TEI>
