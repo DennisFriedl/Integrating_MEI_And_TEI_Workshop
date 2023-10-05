@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- add rng and sch namespaces to TEI -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Integrating TEI and MEI - ODD for TEI encoding with musical content coded in MEI</title>
+            <author>Kristin Herold</author>
+            <author>Johannes Kepper</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+      </publicationStmt>
+         <sourceDesc>
+            <p>born digital</p>
+         </sourceDesc>
+      </fileDesc>
+     <revisionDesc>
+        <change n="1" when="2023-09" who="github.com/krHERO github.com/kepper" >create ODD from scratch, add comments to the code</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <head></head>
+         <p></p>
+         <schemaSpec ident="tei" ns="http://www.tei-c.org/ns/1.0" prefix="tei_" start="TEI">     
+            <desc>customizes the use of MEI into TEI</desc>
+            
+            <!-- declare MEI and TEI namespaces for use in schematron -->
+            <constraintSpec ident="set_ns" scheme="schematron" mode="add">
+               <constraint>
+                  <sch:ns xmlns:sch="http://purl.oclc.org/dsdl/schematron" prefix="mei"
+                     uri="http://www.music-encoding.org/ns/mei"/>
+                  <sch:ns xmlns:sch="http://purl.oclc.org/dsdl/schematron" prefix="tei"
+                     uri="http://www.tei-c.org/ns/1.0"/>
+               </constraint>
+            </constraintSpec>
+            
+            <!-- 
+               * add some internal TEI modules via @key to validate your xml
+               * you could be even more precise using @include and @exclude to take care of single elements of one module (we did not use that)
+            -->
+            <moduleRef key="tei"/>
+            <moduleRef key="core"/>
+            <moduleRef key="figures"/>
+            <moduleRef key="header"/>
+            <moduleRef key="namesdates"/>
+            <moduleRef key="textstructure"/>
+            <moduleRef key="transcr"/>
+            <!-- add MEI as external module via @url -->
+            <moduleRef url="https://music-encoding.org/schema/4.0.1/mei-all.rng"/>
+            
+            <!-- 
+               take care of the four possible options to add mucial content in an elementSpec for the element tei:notatedMusic
+               * tei:graphic
+               * mei:section
+               * mei:layer
+               * mei:mdiv
+            -->
+            <elementSpec ident="notatedMusic" module="figures" mode="change">
+               <content>
+                  <rng:zeroOrMore>
+                     <rng:choice>
+                        <rng:ref name="tei_graphic"/>
+                        <rng:ref name="mei_model.sectionLike"/>
+                        <rng:ref name="mei_layer"/>
+                        <rng:ref name="mei_mdiv"/>
+                     </rng:choice>
+                  </rng:zeroOrMore>
+               </content>
+            </elementSpec>
+            
+         </schemaSpec>
+      </body>
+  </text>
+</TEI>
